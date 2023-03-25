@@ -2,9 +2,9 @@ import { createContext } from "react";
 export type IContextItem = {
   id: string;
   name: string;
-  description: string;
   price: number;
   amount: number;
+  description?: string;
 };
 
 export type IContextItems = {

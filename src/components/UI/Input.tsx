@@ -11,13 +11,14 @@ type IInputProps = {
     step?: number;
     defaultValue?: string;
   };
+  // ref:MutableRefObject<HTMLInputElement>
 };
 
-const Input: FC<IInputProps> = ({ label, input }) => {
+const Input: FC<IInputProps> = ({ label, input }, ref) => {
   return (
     <div className={classes.input}>
       <label htmlFor={input.id}>{label}</label>
-      <input {...input} />
+      <input ref={ref} {...input} />
     </div>
   );
 };
