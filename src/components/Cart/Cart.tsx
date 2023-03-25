@@ -9,7 +9,7 @@ const Cart: FC<ICartProps> = ({ onClose }) => {
   const cartItems = (
     <ul className={classes["cart-item"]}>
       {[{ id: "c1", name: "Sushi", amount: 2, price: 12.99 }].map((item) => (
-        <li key={item.id}>item.name</li>
+        <li key={item.id}>{item.name}</li>
       ))}
     </ul>
   );

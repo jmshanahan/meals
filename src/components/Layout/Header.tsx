@@ -1,5 +1,5 @@
 import React, { FC, Fragment } from "react";
-import HeaderCartButton from "./HeaderCarButton";
+import HeaderCartButton from "./HeaderCartButton";
 import CartIcon from "../Cart/CartIcon";
 
 import classes from "./Header.module.css";
